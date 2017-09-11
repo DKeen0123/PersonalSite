@@ -6,7 +6,9 @@ autoprefixer = require('autoprefixer'),
 //can create variables in css
 cssvars = require('postcss-simple-vars'),
 //use nested css structure
-nested = require('postcss-nested');
+nested = require('postcss-nested'),
+//can modulate css - import all in to main style sheet
+cssImport = require('postcss-import');
 
 
 gulp.task('default', function(){
@@ -19,7 +21,7 @@ gulp.task('html', function(){
 
 gulp.task('styles', function(){
   return gulp.src('./app/assets/styles/styles.css')
-    .pipe(postcss([cssvars, nested, autoprefixer]))
+    .pipe(postcss([cssImport, cssvars, nested, autoprefixer]))
     .pipe(gulp.dest('./app/temp/styles'));
 })
 
