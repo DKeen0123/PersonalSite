@@ -1,3 +1,14 @@
 .banner {
   height: 50%;
+  position: relative;
+
+}
+
+#logo {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  margin-left: -70px;
+
 }
