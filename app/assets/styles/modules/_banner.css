@@ -1,8 +1,14 @@
 .banner {
   height: 50%;
+  border-bottom: 10px solid $mainBlue;
   position: relative;
 
+  &__img {
+    display: block;
+  }
 }
+
+
 
 #logo {
   position: absolute;

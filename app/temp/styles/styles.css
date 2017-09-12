@@ -450,20 +450,6 @@ template {
   display: none;
 }
 
-.banner {
-  height: 50%;
-  position: relative;
-
-}
-
-#logo {
-  position: absolute;
-
-  top: 0;
-  left: 0;
-  margin-left: -70px;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   color: #333;
@@ -473,3 +459,141 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.banner {
+  height: 50%;
+  border-bottom: 10px solid #364156;
+  position: relative;
+}
+
+.banner__img {
+    display: block;
+  }
+
+#logo {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  margin-left: -70px;
+}
+
+.wrapper {
+  padding-left: 18px;
+  padding-right: 18px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.page-section {
+  padding: 1rem 0;
+
+}
+
+@media (min-width: 800px){
+
+.page-section {
+      padding: 4.5rem 0
+
+}
+  }
+
+.headline {
+  font-weight: 300;
+  font-size: 1.9rem;
+  color: #364156;
+}
+
+@media (min-width: 530px){
+
+.headline {
+    font-size: 2.875rem
+}
+  }
+
+.headline--centered {
+    text-align: center;
+  }
+
+.headline--gold {
+    color: #8F754F;
+  }
+
+.headline--small {
+    font-size: 1.2rem;
+  }
+
+@media (min-width: 530px){
+
+.headline--small {
+      font-size: 1.875rem
+  }
+  }
+
+.headline--b-margin-small {
+    margin-bottom: .5em;
+  }
+
+.headline--b-margin-large {
+    margin-bottom: 1.6em;
+  }
+
+.row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+.row--gutters {
+    margin-right: -65px;
+  }
+
+.row--gutters > div {
+    padding-right: 65px;
+  }
+
+@media (min-width: 800px){
+    .row__medium-6 {
+      float:left;
+      width: 50%;
+    }
+  }
+
+.skill-container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+  color: white;
+}
+
+.skills--html {
+    width: 100%;
+    background-color: blue;
+  }
+
+.skills--css {
+    width: 60%;
+    background-color: green;
+  }
+
+.skills--js {
+    width: 40%;
+    background-color: #D7B377;
+  }
+
+.skills--wp {
+    width: 85%;
+    background-color: purple;
+  }
