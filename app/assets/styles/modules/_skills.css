@@ -1,6 +1,7 @@
 .skill-container {
   width: 100%;
-  background-color: #ddd;
+  background-color: #FFF;
+
 }
 
 .skills {
@@ -27,5 +28,9 @@
   &--wp {
     width: 85%;
     background-color: purple;
+  }
+
+  &--p {
+    padding-top: 30px;
   }
 }

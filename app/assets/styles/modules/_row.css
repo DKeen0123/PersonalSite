@@ -9,6 +9,10 @@
     padding-right: 65px;
   }
 
+  &--t-padding {
+    padding-top: 86px;
+  }
+
   @mixin atMedium {
     &__medium-6 {
       float:left;
@@ -16,4 +20,16 @@
     }
   }
 
+  /* Begin Equal Height Rules */
+
+  &--equal-height-at-medium {
+    @mixin atMedium {
+      display: flex;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
+    }
+  }
 }

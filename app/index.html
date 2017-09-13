@@ -24,43 +24,61 @@
     <img srcset="assets/images/banner_logo_small.png 640w, assets/images/banner_logo_medium.png 1024w, assets/images/banner_logo.png 1440w" class="banner__img" />
   </div>
 
-  <div class="about page-section">
-    <div class="wrapper">
+  <div id="about" class="page-section page-section--about">
+    <div class="wrapper wrapper--no-padding-until-medium">
       <h1 class="headline headline--centered headline--b-margin-small">About Me</h1>
       <h2 class="headline headline--centered headline--gold headline--small headline--b-margin-large">A developer with a <strong>business brain</strong></h2>
-      <div class="row row--gutters">
+      <div class="row row--gutters generic-content-container row--t-padding row--equal-height-at-medium">
         <div class="row__medium-6">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt congue gravida. Praesent ultrices iaculis viverra. Etiam tincidunt sem non luctus facilisis. Nullam bibendum quis nulla non cursus. Donec gravida pretium ex, ultricies tempus urna
-            pulvinar a. Suspendisse pulvinar eu ex non auctor. Quisque tincidunt ipsum sed eros semper facilisis. Donec blandit sapien, per inceptos himenaeos. Duis consectetur lacus eget lorem viverra, quis dapibus nibh eleifend. Aliquam fringilla a tellus
-            sagittis dapibus. Quisque mattis luctus sem sed laoreet. Suspendisse consectetur dignissim tincidunt. Integer rhoncus nunc ac felis feugiat, sit amet suscipit velit tristique. Cras at lectus pretium, bibendum massa at, tempus tortor. Pellentesque
-            ac rutrum est. Nullam vel tellus arcu. Quisque tincidunt congue felis, ac egestas massa lacinia vel. Sed dignissim ante nec lacinia consectetur. Pellentesque porttitor nisl a dictum convallis. Phasellus eu ante mollis odio aliquet pellentesque.
-            Nulla imperdiet congue ex, eu vehicula nisi consequat nec. Sed vel dui ac nunc hendrerit lacinia. Donec vel finibus ligula.
-          </p>
+          <div class="about">
+            <div class="about__photo">
+              <img src="/assets/images/profilepic.jpg" />
+            </div>
+            <h3 class="about__title">Daniel Keen</h3>
+            <h4 class="about__subtitle">Learn, Create, Learn Again</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt congue gravida. Praesent ultrices iaculis viverra. Etiam tincidunt sem non luctus facilisis. Nullam bibendum quis nulla non cursus. Donec gravida pretium ex, ultricies tempus urna
+              pulvinar a. Suspendisse pulvinar eu ex non auctor. Quisque tincidunt ipsum sed eros semper facilisis. Donec blandit sapien, per inceptos himenaeos. Duis consectetur lacus eget lorem viverra, quis dapibus nibh eleifend. Aliquam fringilla a tellus
+              sagittis dapibus. Quisque mattis luctus sem sed laoreet. Suspendisse consectetur dignissim tincidunt. Integer rhoncus nunc ac felis feugiat, sit amet suscipit velit tristique. Cras at lectus pretium, bibendum massa at, tempus tortor. Pellentesque
+              ac rutrum est. Nullam vel tellus arcu. Quisque tincidunt congue felis, ac egestas massa lacinia vel. Sed dignissim ante nec lacinia consectetur. Pellentesque porttitor nisl a dictum convallis. Phasellus eu ante mollis odio aliquet pellentesque.
+              Nulla imperdiet congue ex, eu vehicula nisi consequat nec. Sed vel dui ac nunc hendrerit lacinia. Donec vel finibus ligula.
+            </p>
+          </div>
         </div>
         <div class="row__medium-6">
-          <p>HTML</p>
-          <div class="skill-container">
-            <div class="skills skills--html">100%</div>
-          </div>
-          <p>CSS</p>
-          <div class="skill-container">
-            <div class="skills skills--css">60%</div>
-          </div>
-            <p>JavaScript</p>
-          <div class="skill-container">
-            <div class="skills skills--js">40%</div>
-          </div>
-          <p>WordPress</p>
-          <div class="skill-container">
-            <div class="skills skills--wp">85%</div>
+          <div class="about">
+            <h3 class="about__title-skills">My Skills</h3>
+            <h4 class="about__subtitle">
+              Proficiency So Far:
+            </h4>
+              <p>HTML</p>
+              <div class="skill-container">
+                <div class="skills skills--html">100%</div>
+              </div>
+              <p>CSS</p>
+              <div class="skill-container">
+                <div class="skills skills--css">60%</div>
+              </div>
+                <p>JavaScript</p>
+              <div class="skill-container">
+                <div class="skills skills--js">40%</div>
+              </div>
+              <p>WordPress</p>
+              <div class="skill-container">
+                <div class="skills skills--wp">85%</div>
+              </div>
+
+              <p class="skills--p">
+                I am also learning the React framework, and will be adding it to many of my old and most of my new projects.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="portfolio page-section">
+  <div class="portfolio page-section page-section--portfolio">
     <div class="wrapper">
       <h1 class="headline headline--centered headline-b-margin-small">Portfolio</h1>
       <h2  class="headline headline--centered headline--gold headline--small headline--b-margin-large">
@@ -73,6 +91,13 @@
         <div class="row__medium-6">
           <img src="assets/images/quote_machine.png" />
         </div>
+        <div class="row row--gutters">
+          <div class="row__medium-6">
+            <img src="assets/images/coming_soon.jpg" />
+          </div>
+          <div class="row__medium-6">
+            <img src="assets/images/coming_soon.jpg" />
+          </div>
       </div>
     </div>
   </div>

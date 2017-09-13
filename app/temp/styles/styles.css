@@ -492,17 +492,44 @@ img {
   overflow: hidden;
 }
 
+.wrapper--no-padding-until-medium {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+@media (min-width: 800px){
+
+.wrapper--no-padding-until-medium {
+      padding-left: 18px;
+      padding-right: 18px
+  }
+  }
+
 .page-section {
   padding: 1rem 0;
-
 }
 
 @media (min-width: 800px){
 
 .page-section {
       padding: 4.5rem 0
-
 }
+  }
+
+@media (min-width: 800px){
+
+.page-section--about {
+      background: url('/assets/images/background_about.jpeg')top center no-repeat;
+      background-size: cover
+  }
+  }
+
+@media (min-width: 800px){
+
+.page-section--portfolio {
+      background: url('/assets/images/portfolio_bg.jpg')top center no-repeat;
+      background-size: cover
+  }
   }
 
 .headline {
@@ -559,6 +586,10 @@ img {
     padding-right: 65px;
   }
 
+.row--t-padding {
+    padding-top: 86px;
+  }
+
 @media (min-width: 800px){
     .row__medium-6 {
       float:left;
@@ -566,9 +597,28 @@ img {
     }
   }
 
+/* Begin Equal Height Rules */
+
+@media (min-width: 800px){
+
+.row--equal-height-at-medium {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex
+  }
+  }
+
+.row--equal-height-at-medium > div {
+      float: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
 .skill-container {
   width: 100%;
-  background-color: #ddd;
+  background-color: #FFF;
+
 }
 
 .skills {
@@ -596,4 +646,74 @@ img {
 .skills--wp {
     width: 85%;
     background-color: purple;
+  }
+
+.skills--p {
+    padding-top: 30px;
+  }
+
+.about {
+  background-color: rgba(210,218,233, .8);
+    padding: 0 18px 1px 1.8125rem;
+    margin-bottom: 80px;
+}
+
+@media (min-width: 800px){
+
+.about {
+    padding: 0 1.8125rem 1px 1.8125rem;
+    margin-bottom: 0
+}
+  }
+
+.about__photo {
+    border-radius: 87.5px;
+    overflow: hidden;
+    width: 175px;
+    height: 172px;
+    margin: 0 auto -86px auto;
+    position: relative;
+    top: -86px;
+    border: 6px solid rgba(210,218,233, .8);
+  }
+
+.about__title {
+    color: #364156;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 0;
+  }
+
+.about__title-skills {
+    color: #364156;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 86px 0 0 0;
+  }
+
+.about__subtitle {
+    color: #8F754F;
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    margin: .25rem 0 1rem 0;
+  }
+
+.generic-content-container p {
+    line-height: 1.65;
+    font-weight: 300;
+    margin: 0 0 1.8rem 0;
+  }
+
+@media (min-width: 530px){
+
+.generic-content-container p {
+      font-size: 1.125rem
+  }
+  }
+
+.generic-content-container p a {
+    font-weight: 700;
   }
