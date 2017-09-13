@@ -590,6 +590,10 @@ img {
     padding-top: 86px;
   }
 
+.row--b-padding {
+    padding-bottom: 50px;
+  }
+
 @media (min-width: 800px){
     .row__medium-6 {
       float:left;
