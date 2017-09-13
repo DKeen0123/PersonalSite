@@ -527,7 +527,7 @@ img {
 @media (min-width: 800px){
 
 .page-section--portfolio {
-      background: url('/assets/images/portfolio_bg.jpg')top center no-repeat;
+      background: url('/assets/images/desk_bg.jpeg')top center no-repeat;
       background-size: cover
   }
   }
@@ -769,4 +769,14 @@ img {
 .portfolio__images a:nth-child(5n) {
     -webkit-transform: rotate(-18deg);
             transform: rotate(-18deg);
+  }
+
+.portfolio__images a:hover {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    z-index:10;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
   }

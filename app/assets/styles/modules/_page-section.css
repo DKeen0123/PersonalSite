@@ -14,7 +14,7 @@
 
   &--portfolio {
     @mixin atMedium {
-      background: url('/assets/images/portfolio_bg.jpg')top center no-repeat;
+      background: url('/assets/images/desk_bg.jpeg')top center no-repeat;
       background-size: cover;
     }
   }
