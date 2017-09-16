@@ -9,6 +9,7 @@
     @mixin atMedium {
       background: url('/assets/images/background_about.jpeg')top center no-repeat;
       background-size: cover;
+      border-bottom: 10px solid $mainBlue;
     }
   }
 
@@ -17,5 +18,25 @@
       background: url('/assets/images/desk_bg.jpeg')top center no-repeat;
       background-size: cover;
     }
+  }
+
+  &--contact a {
+    color: white;
+    background: #e24040;
+    display: block;
+    width: 100%;
+    line-height: 6;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 300;
+    text-decoration: none;
+    padding-top: 0;
+    margin-top: -80px;
+    transition: all 0.3s ease 0s;
+  }
+
+  &--contact a:hover {
+    background: #d32a2a;
+
   }
 }

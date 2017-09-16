@@ -520,7 +520,8 @@ img {
 
 .page-section--about {
       background: url('/assets/images/background_about.jpeg')top center no-repeat;
-      background-size: cover
+      background-size: cover;
+      border-bottom: 10px solid #364156
   }
   }
 
@@ -532,8 +533,29 @@ img {
   }
   }
 
+.page-section--contact a {
+    color: white;
+    background: #e24040;
+    display: block;
+    width: 100%;
+    line-height: 6;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 300;
+    text-decoration: none;
+    padding-top: 0;
+    margin-top: -80px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+
+.page-section--contact a:hover {
+    background: #d32a2a;
+
+  }
+
 .headline {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.9rem;
   color: #364156;
 }
@@ -541,16 +563,12 @@ img {
 @media (min-width: 530px){
 
 .headline {
-    font-size: 2.875rem
+    font-size: 3.875rem
 }
   }
 
 .headline--centered {
     text-align: center;
-  }
-
-.headline--gold {
-    color: #8F754F;
   }
 
 .headline--small {
@@ -566,10 +584,6 @@ img {
 
 .headline--b-margin-small {
     margin-bottom: .5em;
-  }
-
-.headline--b-margin-large {
-    margin-bottom: 1.6em;
   }
 
 .row::after {
@@ -722,61 +736,76 @@ img {
     font-weight: 700;
   }
 
+.portfolio__images {
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
 .portfolio__images a {
-    background: white;
-    display: inline;
-    float: left;
-    margin: 0 15px 30px;
-    padding: 10px 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-    box-shadow: 0 4px 6px rgba(0,0,0,.3);
-    -webkit-transition: all .15s linear;
-    transition: all .15s linear;
-    z-index:0;
-    position:relative;
-  }
+      background: white;
+      display: inline;
+      float: left;
+      margin: 0 15px 30px;
+      padding: 10px 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+      box-shadow: 0 4px 6px rgba(0,0,0,.3);
+      -webkit-transition: all .15s linear;
+      transition: all .15s linear;
+      z-index:0;
+      position:relative;
+    }
 
-.portfolio__images a:after {
-    color: #333;
-  	font-size: 20px;
-  	content: attr(title);
-  	position: relative;
-  	top:15px;
-  }
+@media (min-width: 800px){
 
-.portfolio__images img {
-    display: block;
-	  width: inherit;
-  }
+      .portfolio__images {
+        width: 100%;
+      }
 
-.portfolio__images a:nth-child(2n) {
-	    -webkit-transform: rotate(4deg);
-	            transform: rotate(4deg);
-  }
 
-.portfolio__images a:nth-child(3n) {
-	    -webkit-transform: rotate(-24deg);
-	            transform: rotate(-24deg);
-  }
+    .portfolio__images a:after {
+      color: #333;
+    	font-size: 20px;
+    	content: attr(title);
+    	position: relative;
+    	top:15px;
+    }
 
-.portfolio__images a:nth-child(4n) {
-    -webkit-transform: rotate(14deg);
-            transform: rotate(14deg);
-  }
+    .portfolio__images img {
+      display: block;
+  	  width: inherit;
+    }
 
-.portfolio__images a:nth-child(5n) {
-    -webkit-transform: rotate(-18deg);
-            transform: rotate(-18deg);
-  }
+    .portfolio__images a:nth-child(2n) {
+  	    -webkit-transform: rotate(4deg);
+  	            transform: rotate(4deg);
+    }
 
-.portfolio__images a:hover {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    z-index:10;
-    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    .portfolio__images a:nth-child(3n) {
+  	    -webkit-transform: rotate(-24deg);
+  	            transform: rotate(-24deg);
+    }
+
+    .portfolio__images a:nth-child(4n) {
+      -webkit-transform: rotate(14deg);
+              transform: rotate(14deg);
+    }
+
+    .portfolio__images a:nth-child(5n) {
+      -webkit-transform: rotate(-18deg);
+              transform: rotate(-18deg);
+    }
+
+    .portfolio__images a:hover {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      z-index:10;
+      -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+              box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    }
   }

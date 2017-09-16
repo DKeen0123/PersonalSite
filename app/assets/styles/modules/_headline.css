@@ -1,23 +1,19 @@
 .headline {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.9rem;
   color: $mainBlue;
 
   @mixin atSmall {
-    font-size: 2.875rem;
+    font-size: 3.875rem;
   }
 
   &--centered {
     text-align: center;
   }
 
-  &--gold {
-    color: $mainGold;
-  }
-
   &--small {
     font-size: 1.2rem;
-    
+
     @mixin atSmall {
       font-size: 1.875rem;
     }
@@ -25,9 +21,5 @@
 
   &--b-margin-small {
     margin-bottom: .5em;
-  }
-
-  &--b-margin-large {
-    margin-bottom: 1.6em;
   }
 }
