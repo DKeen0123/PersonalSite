@@ -533,6 +533,10 @@ img {
   }
   }
 
+.page-section--contact {
+    margin-bottom: -60px;
+  }
+
 .page-section--contact a {
     color: white;
     background: #e24040;
@@ -808,4 +812,25 @@ img {
       -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
               box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
     }
+  }
+
+.site-footer {
+  background-color: #364156;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  min-height: 100px;
+}
+
+.site-footer__text {
+    display: block;
+    font-weight: 200;
+  }
+
+.site-footer__icon-container a {
+    color: white;
+  }
+
+.site-footer__icon {
+    padding-right: 10px;
   }
