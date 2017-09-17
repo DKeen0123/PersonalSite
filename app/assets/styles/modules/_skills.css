@@ -1,7 +1,6 @@
 .skill-container {
   width: 100%;
   background-color: #FFF;
-
 }
 
 .skills {
@@ -16,12 +15,12 @@
   }
 
   &--css {
-    width: 60%;
+    width: 70%;
     background-color: green;
   }
 
   &--js {
-    width: 40%;
+    width: 50%;
     background-color: #D7B377;
   }
 

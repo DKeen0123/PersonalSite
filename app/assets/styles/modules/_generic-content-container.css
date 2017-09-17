@@ -10,6 +10,11 @@
     }
   }
 
+  h4 {
+    line-height: 1.65;
+    color: $mainBlue;
+  }
+
   p a {
     font-weight: 700;
   }

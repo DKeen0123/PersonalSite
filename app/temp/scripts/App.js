@@ -11105,6 +11105,10 @@ var _StickyHeader = __webpack_require__(5);
 
 var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
 
+var _SkillBarGrowth = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./modules/SkillBarGrowth\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+var _SkillBarGrowth2 = _interopRequireDefault(_SkillBarGrowth);
+
 var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
@@ -11114,6 +11118,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var mobileMenu = new _MobileMenu2.default();
 new _RevealOnScroll2.default((0, _jquery2.default)(".about"), "60%");
 var stickyHeader = new _StickyHeader2.default();
+var skillBarAnimation = new _SkillBarGrowth2.default();
 
 /***/ }),
 /* 3 */
