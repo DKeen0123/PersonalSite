@@ -7,14 +7,13 @@ class RevealOnScroll {
     this.offsetPercentage = offset;
     this.hideInitially();
     this.createWaypoints();
-
   }
 
   hideInitially() {
     this.itemsToReveal.addClass("reveal-item");
   }
 
-  //create waypoint for each item that has .portfolio__image
+  //create waypoint for each item that has element
   createWaypoints() {
     var that = this;
     this.itemsToReveal.each(function(){

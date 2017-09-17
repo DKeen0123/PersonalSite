@@ -11211,7 +11211,7 @@ var RevealOnScroll = function () {
       this.itemsToReveal.addClass("reveal-item");
     }
 
-    //create waypoint for each item that has .portfolio__image
+    //create waypoint for each item that has element
 
   }, {
     key: 'createWaypoints',
@@ -11729,6 +11729,10 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
+var _noframework = __webpack_require__(1);
+
+var _noframework2 = _interopRequireDefault(_noframework);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -11738,16 +11742,24 @@ var SkillBarAnimation = function () {
     _classCallCheck(this, SkillBarAnimation);
 
     this.skillBar = (0, _jquery2.default)(".skill-container");
-    this.skillBarGrowth();
+    this.skills = (0, _jquery2.default)(".skills");
+    this.skillBarWaypoint();
   }
 
   _createClass(SkillBarAnimation, [{
-    key: 'skillBarGrowth',
-    value: function skillBarGrowth() {
-      this.skillBar.each(function () {
-        (0, _jquery2.default)(this).find('.skillbar-bar').animate({
-          width: (0, _jquery2.default)(this).attr('data-percent')
-        }, 4000);
+    key: 'skillBarWaypoint',
+    value: function skillBarWaypoint() {
+      var that = this;
+      new Waypoint({
+        element: that.skillBar[0],
+        handler: function handler() {
+          that.skillBar.each(function () {
+            (0, _jquery2.default)(this).find('.skillbar-bar').animate({
+              width: (0, _jquery2.default)(this).attr('data-percent')
+            }, 4000);
+          });
+        },
+        offset: "80%"
       });
     }
   }]);
