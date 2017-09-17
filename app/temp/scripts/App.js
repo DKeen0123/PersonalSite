@@ -11105,9 +11105,9 @@ var _StickyHeader = __webpack_require__(5);
 
 var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
 
-var _SkillBarGrowth = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./modules/SkillBarGrowth\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _SkillBarAnimation = __webpack_require__(7);
 
-var _SkillBarGrowth2 = _interopRequireDefault(_SkillBarGrowth);
+var _SkillBarAnimation2 = _interopRequireDefault(_SkillBarAnimation);
 
 var _jquery = __webpack_require__(0);
 
@@ -11118,7 +11118,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var mobileMenu = new _MobileMenu2.default();
 new _RevealOnScroll2.default((0, _jquery2.default)(".about"), "60%");
 var stickyHeader = new _StickyHeader2.default();
-var skillBarAnimation = new _SkillBarGrowth2.default();
+var skillBarAnimation = new _SkillBarAnimation2.default();
 
 /***/ }),
 /* 3 */
@@ -11711,6 +11711,51 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 }));
 
 
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var SkillBarAnimation = function () {
+  function SkillBarAnimation() {
+    _classCallCheck(this, SkillBarAnimation);
+
+    this.skillBar = (0, _jquery2.default)(".skill-container");
+    this.skillBarGrowth();
+  }
+
+  _createClass(SkillBarAnimation, [{
+    key: 'skillBarGrowth',
+    value: function skillBarGrowth() {
+      this.skillBar.each(function () {
+        (0, _jquery2.default)(this).find('.skillbar-bar').animate({
+          width: (0, _jquery2.default)(this).attr('data-percent')
+        }, 4000);
+      });
+    }
+  }]);
+
+  return SkillBarAnimation;
+}();
+
+exports.default = SkillBarAnimation;
 
 /***/ })
 /******/ ]);

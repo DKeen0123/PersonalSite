@@ -10,26 +10,28 @@
   color: white;
 
   &--html {
-    width: 100%;
-    background-color: blue;
+    background-color: #3498db;
   }
 
   &--css {
-    width: 70%;
-    background-color: green;
+    background-color: #2ecc71;
   }
 
   &--js {
-    width: 50%;
     background-color: #D7B377;
   }
 
   &--wp {
-    width: 85%;
     background-color: purple;
   }
 
   &--p {
     padding-top: 30px;
   }
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+  border-radius:3px;
 }

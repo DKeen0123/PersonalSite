@@ -649,28 +649,30 @@ img {
 }
 
 .skills--html {
-    width: 100%;
-    background-color: blue;
+    background-color: #3498db;
   }
 
 .skills--css {
-    width: 70%;
-    background-color: green;
+    background-color: #2ecc71;
   }
 
 .skills--js {
-    width: 50%;
     background-color: #D7B377;
   }
 
 .skills--wp {
-    width: 85%;
     background-color: purple;
   }
 
 .skills--p {
     padding-top: 30px;
   }
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+  border-radius:3px;
+}
 
 .about {
   background-color: rgba(210,218,233, .8);

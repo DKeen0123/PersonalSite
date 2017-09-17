@@ -1,7 +1,7 @@
 import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
-import SkillBarAnimation from './modules/SkillBarGrowth';
+import SkillBarAnimation from './modules/SkillBarAnimation';
 import $ from 'jquery';
 
 var mobileMenu = new MobileMenu();
