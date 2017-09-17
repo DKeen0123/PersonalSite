@@ -755,8 +755,8 @@ img {
       padding: 10px 10px 25px;
       text-align: center;
       text-decoration: none;
-      -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-      box-shadow: 0 4px 6px rgba(0,0,0,.3);
+      -webkit-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+              box-shadow: 0 4px 6px rgba(0,0,0,.3);
       -webkit-transition: all .15s linear;
       transition: all .15s linear;
       z-index:0;
