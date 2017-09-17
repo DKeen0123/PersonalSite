@@ -534,7 +534,7 @@ img {
   }
 
 .page-section--contact {
-    margin-bottom: -60px;
+    margin-bottom: -80px;
   }
 
 .page-section--contact a {
@@ -542,9 +542,9 @@ img {
     background: #e24040;
     display: block;
     width: 100%;
-    line-height: 6;
+    line-height: 10;
     text-align: center;
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 300;
     text-decoration: none;
     padding-top: 0;
@@ -716,7 +716,7 @@ img {
   }
 
 .about__subtitle {
-    color: #8F754F;
+    color: #d1ad79;
     text-align: center;
     font-weight: 400;
     font-size: 0.9375rem;
@@ -851,8 +851,13 @@ img {
 @media (min-width: 800px){
 
 .site-header {
-    background-color: rgba(54 ,65 ,86 , .50)
+    background-color: rgba(54 ,65 ,86 , .50);
+    position: fixed
 }
+
+    .site-header--dark {
+      background-color: rgba(39, 56, 89, .8)
+    }
   }
 
 .site-header__logo {
@@ -872,8 +877,17 @@ img {
 .site-header__logo {
       left: auto;
       -webkit-transform: translateX(0);
-              transform: translateX(0)
+              transform: translateX(0);
+      -webkit-transition: -webkit-transform .3s ease-out;
+      transition: -webkit-transform .3s ease-out;
+      transition: transform .3s ease-out;
+      transition: transform .3s ease-out, -webkit-transform .3s ease-out
   }
+
+      .site-header--dark .site-header__logo {
+        -webkit-transform: scale(.47);
+                transform: scale(.47);
+      }
   }
 
 .site-header__menu-icon {
@@ -1030,6 +1044,11 @@ img {
       padding: 12px 0;
       background-color: transparent
   }
+
+      .primary-nav a.is-current-link {
+        color: #d1ad79;
+        
+      }
   }
 
 .reveal-item {

@@ -23,9 +23,9 @@
         <div class="site-header__menu-content">
         <nav class="primary-nav primary-nav--pull-right">
           <ul>
-            <a href="#about"><li>About</li></a>
-            <a href="#portfolio"><li>Portfolio</li></a>
-            <a href="#contact"><li>Contact</li></a>
+            <a href="#about" id="about-link"><li>About</li></a>
+            <a href="#portfolio" id="portfolio-link"><li>Portfolio</li></a>
+            <a href="#contact" id="contact-link"><li>Contact</li></a>
           </ul>
         </nav>
       </div>
@@ -36,7 +36,7 @@
     <img srcset="assets/images/banner_logo_small.png 640w, assets/images/banner_logo_medium.png 1024w, assets/images/banner_logo.png 1440w" class="banner__img" />
   </div>
 
-  <div id="about" class="page-section page-section--about">
+  <div id="about" class="page-section page-section--about" data-matching-link="#about-link">
     <div class="wrapper wrapper--no-padding-until-medium">
       <h1 class="headline headline--centered headline--b-margin-small">About Me</h1>
       <div class="row row--gutters generic-content-container row--t-padding row--equal-height-at-medium">
@@ -88,7 +88,7 @@
       </div>
     </div>
 
-  <div id="portfolio" class="page-section page-section--portfolio">
+  <div id="portfolio" class="page-section page-section--portfolio" data-matching-link="#portfolio-link">
       <h1 class="headline headline--centered headline-b-margin-small">Portfolio</h1>
     <div class="wrapper">
       <div class="portfolio__images">
@@ -103,7 +103,7 @@
         </div>
       </div>
 
-  <div id="contact" class="page-section--contact">
+  <div id="contact" class="page-section--contact" data-matching-link="#contact-link">
     <a href="mailto:keendaniel01@gmail.com"><p>keendaniel01@gmail.com</p>
     </a>
   </div>

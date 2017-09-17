@@ -11,6 +11,11 @@
 
   @mixin atMedium {
     background-color: rgba(54 ,65 ,86 , .50);
+    position: fixed;
+
+    &--dark {
+      background-color: rgba(39, 56, 89, .8)
+    }
   }
 
   &__logo {
@@ -25,6 +30,11 @@
     @mixin atMedium {
       left: auto;
       transform: translateX(0);
+      transition: transform .3s ease-out;
+
+      .site-header--dark & {
+        transform: scale(.47);
+      }
     }
   }
 
