@@ -7,7 +7,7 @@
 
   &--about {
     @mixin atMedium {
-      background: url('/assets/images/background_about.jpeg')top center no-repeat;
+      background: url('../../assets/images/background_about.jpeg')top center no-repeat;
       background-size: cover;
       border-bottom: 10px solid $mainBlue;
     }
@@ -18,7 +18,7 @@
     margin-bottom: 40px;
     @mixin atMedium {
       &.lazyloaded {
-        background: url('/assets/images/desk_bg.jpeg')top center no-repeat;
+        background: url('../../assets/images/desk_bg.jpeg')top center no-repeat;
         background-size: cover;
       }
     }

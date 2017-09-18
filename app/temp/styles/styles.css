@@ -566,7 +566,7 @@ img {
 @media (min-width: 800px){
 
 .page-section--about {
-      background: url('/assets/images/background_about.jpeg')top center no-repeat;
+      background: url('../../assets/images/background_about.jpeg')top center no-repeat;
       background-size: cover;
       border-bottom: 10px solid #364156
   }
@@ -579,7 +579,7 @@ img {
 
 @media (min-width: 800px){
       .page-section--portfolio.lazyloaded {
-        background: url('/assets/images/desk_bg.jpeg')top center no-repeat;
+        background: url('../../assets/images/desk_bg.jpeg')top center no-repeat;
         background-size: cover;
       }
   }
