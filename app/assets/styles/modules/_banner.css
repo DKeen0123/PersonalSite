@@ -6,9 +6,41 @@
   &__img {
     display: block;
   }
+
+  &__text-content {
+    font-family: 'Lato',sans-serif;
+    position: absolute;
+    top: 47%;
+    transform: translateY(-70%);
+    left: 0;
+    width: 95%;
+    text-align: right;
+    color: #dee0de;
+
+    @mixin atMedium {
+      top: 45%;
+      transform: translateY(-100%);
+      left: 0;
+      width: 95%;
+    }
+  }
+
+  &__title {
+    font-weight: 100;
+    letter-spacing: 5px;
+    font-size: .55rem;
+
+    @mixin atMedium {
+      font-size: 1.1rem;
+    }
+
+    @mixin atLarge {
+      font-size: 1.7rem;
+      letter-spacing: 7px;
+    }
+
+  }
 }
-
-
 
 #logo {
   position: absolute;
