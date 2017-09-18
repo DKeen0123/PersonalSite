@@ -11273,7 +11273,7 @@ var StickyHeader = function () {
     this.headerTriggerElement = (0, _jquery2.default)(".page-section--about");
     this.createHeaderWaypoint();
     this.pageSections = (0, _jquery2.default)(".page-section, .page-section--contact");
-    this.headerLinks = (0, _jquery2.default)(".primary-nav a");
+    this.headerLinks = (0, _jquery2.default)(".primary-nav a, .about__arrow a");
     this.createPageSectionWaypoints();
     this.addSmoothScrolling();
     this.refreshWaypoints();
