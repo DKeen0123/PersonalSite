@@ -14,6 +14,8 @@
   }
 
   &--portfolio {
+    background-color: #dde0e7;
+    margin-bottom: 40px;
     @mixin atMedium {
       &.lazyloaded {
         background: url('/assets/images/desk_bg.jpeg')top center no-repeat;

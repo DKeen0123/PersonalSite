@@ -572,6 +572,11 @@ img {
   }
   }
 
+.page-section--portfolio {
+    background-color: #dde0e7;
+    margin-bottom: 40px;
+  }
+
 @media (min-width: 800px){
       .page-section--portfolio.lazyloaded {
         background: url('/assets/images/desk_bg.jpeg')top center no-repeat;
@@ -844,6 +849,14 @@ img {
       transition: all .15s linear;
       z-index:0;
       position:relative;
+    }
+
+.portfolio__images a:after {
+      color: #333;
+      font-size: 10px;
+      content: attr(title);
+      position: relative;
+      top:10px;
     }
 
 @media (min-width: 800px){

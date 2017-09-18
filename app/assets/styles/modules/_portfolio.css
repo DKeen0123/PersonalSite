@@ -21,6 +21,14 @@
       position:relative;
     }
 
+    &__images a:after {
+      color: #333;
+      font-size: 10px;
+      content: attr(title);
+      position: relative;
+      top:10px;
+    }
+
     @mixin atMedium {
 
       &__images {
