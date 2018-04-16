@@ -1,6 +1,6 @@
 .skill-container {
   width: 100%;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .skills {
@@ -18,7 +18,15 @@
   }
 
   &--js {
-    background-color: #D7B377;
+    background-color: #d7b377;
+  }
+
+  &--react {
+    background-color: #c30101;
+  }
+
+  &--python {
+    background-color: #ff9900;
   }
 
   &--wp {
@@ -31,7 +39,7 @@
 }
 
 .skillbar-bar {
-	height:35px;
-	width:0px;
-  border-radius:3px;
+  height: 35px;
+  width: 0px;
+  border-radius: 3px;
 }
